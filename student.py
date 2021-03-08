@@ -16,4 +16,10 @@ class Student:
     def get_skills(self):
         return self.skills
    def set_name(self, name):
-      self.name = name;
+      self.name = name
+        
+    def set_percentage(self, perct);
+        self.percentage = perct
+        
+    def set_skill(self, skillsnew):
+        self.skills = skillsnew
