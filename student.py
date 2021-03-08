@@ -1,7 +1,5 @@
 
 class Student:
-   
-   
     def __init__(self,name,Id,percentage,skills):
         self.name = name
         self.Id = Id
@@ -17,3 +15,5 @@ class Student:
         return self.percentage
     def get_skills(self):
         return self.skills
+   def set_name(self, name):
+      self.name = name;
