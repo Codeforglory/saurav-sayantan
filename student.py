@@ -25,3 +25,19 @@ class Student:
 
     def set_skill(self, skillsnew):
         self.skills = skillsnew
+
+        
+class Operation (Student):
+    
+    def __init__(self):
+        Student.__init__(self,"saurav",1)
+
+    def changeName(self, newName):
+        self.set_name(newName)
+
+    def changeNameUserInput(self):
+        newName = input("Enter your new Name")
+        self.set_name(newName)
+
+    def addSkills(self,newSkills):
+        self.set_skill(newSkills)
