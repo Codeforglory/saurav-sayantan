@@ -5,6 +5,7 @@ class Student:
         self.percentage = percentage
         self.skills = skills
 
+    # Getter methods
     def get_name(self):
         return self.name
 
@@ -17,6 +18,8 @@ class Student:
     def get_skills(self):
         return self.skills
 
+    
+    # Setter methods
     def set_name(self, name):
         self.name = name
 
@@ -31,13 +34,18 @@ class Operation (Student):
     def __init__(self):
         Student.__init__(self,"saurav",1,10,["java"])
 
+    #Method to change name     
     def changeName(self, newName):
         self.set_name(newName)
-
+ 
+    #Method to change name based on user input
     def changeNameUserInput(self):
         newName = input("Enter your new Name")
         self.set_name(newName)
 
+    #Method to add upto 5 new skills    
     def addSkills(self,newSkills):
-        newarr = newSkills+ self.skills
-        self.set_skill(newarr)
+        
+        if newSkills.length < 5:
+            newarr = newSkills+ self.skills
+            self.set_skill(newarr)
