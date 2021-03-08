@@ -1,5 +1,5 @@
 class Student:
-    def __init__(self, name, Id, percentage, skills):
+    def __init__(self, name, Id, percentage = 0, skills = []):
         self.name = name
         self.Id = Id
         self.percentage = percentage
