@@ -28,9 +28,8 @@ class Student:
 
         
 class Operation (Student):
-    
     def __init__(self):
-        Student.__init__(self,"saurav",1)
+        Student.__init__(self,"saurav",1,10,["java"])
 
     def changeName(self, newName):
         self.set_name(newName)
@@ -40,4 +39,5 @@ class Operation (Student):
         self.set_name(newName)
 
     def addSkills(self,newSkills):
-        self.set_skill(newSkills)
+        newarr = newSkills+ self.skills
+        self.set_skill(newarr)
